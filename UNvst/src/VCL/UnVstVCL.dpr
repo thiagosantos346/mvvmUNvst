@@ -1,18 +1,14 @@
-program UNvstVCL;
+program UnVstVCL;
+
 uses
   Vcl.Forms,
-  //View.Sala in 'Views\View.Albums.pas' {ViewSala},
-  Data in '..\Shared\Data\Data.pas',
-  Model.Sala in '..\Shared\Models\Model.Sala.pas',
-  Model in '..\Shared\Models\Model.pas',
-  ViewModel.Sala in '..\Shared\ViewModels\ViewModel.Sala.pas',
-  //Template.Album in '..\Shared\Templates\Template.Album.pas',
-  //Converter.TitleToCaption in '..\Shared\Converters\Converter.TitleToCaption.pas',
+  View.Sala in 'Views\View.Sala.pas' {Form1};
+
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  //Application.CreateForm(TViewSala, ViewSala);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
